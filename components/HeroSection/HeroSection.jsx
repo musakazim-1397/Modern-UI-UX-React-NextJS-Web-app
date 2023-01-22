@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div className={classes.container}>
       <div className={classes.leftSide}>
-        <h1 className={classes.heroMainHeading}>Let's Build Something amazing with GPT-3 OpenAI</h1>
+        <h1 className={classes.heroMainHeading}>Let&#39;s Build Something amazing with GPT-3 OpenAI</h1>
         <p className={classes.heroMainPara}>
           Yet bed any for travelling assistance indulgence unpleasing. Not
           thoughts all exercise blessing. Indulgence way everything joy
