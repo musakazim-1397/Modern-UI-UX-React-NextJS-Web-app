@@ -1,0 +1,112 @@
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #0c1420;
+}
+
+.gptContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    background: linear-gradient(to top left, rgb(28, 34, 56) 25%, rgb(55, 55, 151));
+    padding: 2rem;
+    margin: 3rem 0 3rem 0;
+}
+
+.gptHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.headerLeft{
+    display: flex;
+    max-width: 15rem;
+    align-items: flex-end;
+    white-space: pre;
+}
+
+.headingWithTopBorder{
+    border-top: 2.9px solid #c36f7d;
+    padding-top: 0.7rem;
+}
+
+.headerRight{
+    max-width: 23rem;
+    font-size: 13px;
+    color:  rgb(101 116 159);
+}
+
+.gptMid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.midGradientText{
+    background: linear-gradient(90deg, rgb(240, 137, 180) 38%, rgb(173 38 189));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 20rem;
+}
+
+.gptBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0 0 0;
+    width: 100%;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 13rem;
+    margin: 0 1rem;
+}
+
+.cardText{
+    font-size: 13px;
+    color:  rgb(101 116 159);
+}
+
+@media screen and (max-width:1060px){
+    .gptContainer{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:910px){
+    .gptContainer{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:760px){
+    .gptContainer{
+        width: max-content;
+        padding: 2rem;
+    }
+    .gptHeader{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .gptMid{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .gptBottom{
+        flex-direction: column;
+    }
+    .cardContainer{
+        margin: 1rem 0;
+    }
+}

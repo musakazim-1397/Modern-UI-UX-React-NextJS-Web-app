@@ -1,0 +1,125 @@
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg, #01254d 41%, rgb(2 11 18));
+    width: 100%;
+    height: 10vh;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu{
+    display:none;
+}
+
+.loginBtn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 2rem;
+}
+.logoText{
+    margin:0 3rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.navText{
+    margin: 0 1rem;
+}
+
+.signupBtn{
+    background-color: rgb(172, 51, 8);
+    border: none;
+    outline: none;
+    padding: 0.6rem;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:900px) {
+    .logoText{
+        margin: 0 2rem;
+    }
+    .navText{
+        margin: 0 0.8rem;
+    }
+    .loginBtn{
+        margin-right: 1rem;
+    }
+}
+
+@media  screen and (max-width: 760px) {
+    .container{
+        justify-content: space-between;
+    }
+    .menu{
+        display: flex;
+        position: relative;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+    .right{
+        display: none;
+    }
+    .navText{
+        display: none;
+    }
+}
+
+.menuContainer{
+    position: absolute;
+    top: 123%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 10rem;
+    height: max-content;
+    background: linear-gradient(to top right, rgb(75, 74, 74) 72%, rgb(10 10 10));
+    border-radius: 5px;
+}
+
+.menuItem{
+    font-size: 1rem;
+    padding: 0.8rem 0.3rem;
+
+}
+
+.menuSignupBtn{
+    background-color: rgb(172, 51, 8);
+    border: none;
+    outline: none;
+    padding: 0.6rem 0.7rem;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.menuLoginBtn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 0.6rem 0.7rem;
+}

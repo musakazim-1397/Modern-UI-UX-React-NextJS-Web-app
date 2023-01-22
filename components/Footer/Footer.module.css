@@ -1,0 +1,102 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(90deg, #01254d 41%, rgb(2 11 18));;
+}
+
+.footerUpContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3rem 0;
+}
+.btn{
+    background: transparent;
+    padding: 0.4rem 0.6rem;
+    border: 2px solid white;
+    outline: none;
+    color: white;
+}
+
+.footerMainHeading{
+    background: linear-gradient(90deg, rgb(240, 137, 180) 38%, rgb(173 38 189));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    max-width: 36rem;
+    font-size: 3rem;
+}
+
+.footerbottomContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.bottomLeftContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 8rem;
+}
+
+.logoText{
+    margin: 0 0;
+}
+.logoSmallText{
+    font-size:9px;
+    text-align: center;
+}
+.linksPara{
+    font-size: 9px;
+}
+
+.bottomRightContent{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 30rem;
+}
+
+.linksContainer, .getInTouchContainer, .companyContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 1.5rem;
+}
+
+.allRightsReserved{
+    text-align: center;
+    font-size: 9px;
+}
+
+@media screen and (max-width:730px){
+    .footerMainHeading{
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width:570px){
+    .footerMainHeading{
+        font-size: 1.8rem;
+        
+    }
+    .footerUpContent{
+        margin: 2rem 2rem;
+    }
+    .footerbottomContent{
+        flex-direction:column-reverse;
+    }
+    .bottomRightContent{
+        margin-bottom: 2rem;
+    }
+}

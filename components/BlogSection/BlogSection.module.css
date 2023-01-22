@@ -1,0 +1,170 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.8rem 1rem 2.5rem 1rem;
+    background: radial-gradient(circle at 100% 0%, #163a63 3%, #163a63 8%, #0e2a4a 15%, #05101c);
+}
+.title{
+    max-width: 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 2.1rem;
+    margin-top: 1.8rem;
+}
+
+.mainHeading{
+    background: linear-gradient(90deg, rgb(240, 137, 180) 38%, rgb(173 38 189));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.6rem;
+}
+
+.body{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.mainBlog{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.mainBlogImageContainer{
+    position: relative;
+    width: 250px;
+    height: 225px;
+    margin: 0;
+}
+.smallBlogImageContainer{
+    position: relative;
+    width: 175px;
+    height: 100px;
+    margin: 0;
+}
+
+.blogMainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgb(6, 54, 73);
+    width: 100%;
+    padding: 1rem;
+}
+
+.smallBlogMainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgb(6, 54, 73);
+    width: 100%;
+    padding: 0.3rem 0.4rem;
+}
+
+.blogSmallText{
+    font-size: 9px;
+    margin: 0;
+}
+
+.smallBlogSmallText{
+    font-size: 7.5px;
+    margin: 0;
+}
+
+.blogTitle{
+    font-size: 1rem;
+    max-width:10rem;
+    margin: 3rem 0;
+}
+.smallBlogTitle{
+    font-size: 14px;
+    max-width:10rem;
+}
+
+.otherBlogs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+.upperBlogs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+}
+.smallLeftBlog{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 1rem;
+}
+.smallRightBlog{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 1rem;
+}
+
+.lowerBlogs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.3rem;
+}
+
+@media screen and (max-width:695px){
+    .body{
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+        margin-left: 0;
+        margin-top: 2.8rem;
+    }
+    .mainHeading{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .blogMainContent{
+        padding: 0.3rem 0.4rem;
+    }
+    .blogSmallText{
+        font-size: 7.5px;
+    }
+    .blogTitle{
+        font-size:14px;
+        margin: 1rem 0;
+    }
+    .otherBlogs{
+        margin-left:0;
+        margin: 1rem 0;
+    }
+
+    .upperBlogs{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .smallLeftBlog{
+        margin: 1rem 0;
+    }
+    .smallRightBlog{
+        margin: 1rem 0;
+    }
+    .lowerBlogs{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .mainBlogImageContainer, .smallBlogImageContainer{
+        width: 300px;
+        height: 180px;
+    }
+}
